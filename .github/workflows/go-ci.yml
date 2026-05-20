@@ -12,6 +12,10 @@ on:
 permissions:
   contents: read
 
+# Use Node.js 24 for actions
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # Pre-approval check for external PRs
   authorize:
